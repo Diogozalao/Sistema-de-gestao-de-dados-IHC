@@ -1,0 +1,63 @@
+/* Estilos base */
+.root {
+    -fx-font-family: 'Tahoma';
+}
+
+/* Painel esquerdo */
+.left-form {
+    -fx-background-color: linear-gradient(to bottom right, #306369, #399934);
+}
+
+/* Painel direito */
+.right-form {
+    -fx-background-color: #ffffff;
+}
+
+/* Título */
+.title-label {
+    -fx-text-fill: #1a1a1a;
+    -fx-font-size: 23px;
+    -fx-font-weight: bold;
+}
+
+/* Campos de texto */
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-background-radius: 6px;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 6px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #306369;
+    -fx-border-width: 2px;
+}
+
+/* Botão de login */
+.login-btn {
+    -fx-background-color: linear-gradient(to bottom, #278f96, #2d645f);
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 10px;
+}
+
+.login-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #21a7ae, #368981);
+}
+
+/* Botão de fechar */
+.close {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 5px;
+}
+
+.close:hover {
+    -fx-background-color: #ff3547;
+    -fx-background-radius: 0;
+}

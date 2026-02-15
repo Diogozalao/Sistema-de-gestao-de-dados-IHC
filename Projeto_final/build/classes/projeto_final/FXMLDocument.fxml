@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_final.FXMLDocumentController">
+   
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <!-- Painel direito (formulário de login) -->
+            <AnchorPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="right-form">
+               <children>
+                  <Label layoutX="31.0" layoutY="95.0" styleClass="title-label" stylesheets="@loginDesign.css" text="Welcome back!">
+                     <font>
+                        <Font name="Tahoma Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  
+                  <TextField fx:id="username" layoutX="40.0" layoutY="142.0" onAction="#loginAdmin" prefWidth="220.0" promptText="Username" styleClass="text-field" stylesheets="@loginDesign.css" />
+                             
+                  <PasswordField fx:id="password" layoutX="40.0" layoutY="200.0" onAction="#loginAdmin" prefWidth="220.0" promptText="Password" styleClass="text-field" stylesheets="@loginDesign.css" />
+                                 
+                  <Button fx:id="loginBtn" layoutX="40.0" layoutY="250.0" onAction="#loginAdmin" prefWidth="220.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                          
+                  <Button fx:id="close" layoutX="234.0" layoutY="3.2" onAction="#close" prefHeight="30.0" prefWidth="32.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="3.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                           <image>
+                              <Image url="@img/close_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            
+            <!-- Painel esquerdo (logo) -->
+            <AnchorPane prefHeight="400.0" prefWidth="300.0" styleClass="left-form" stylesheets="@loginDesign.css">
+               <children>
+                  <ImageView fitHeight="279.0" fitWidth="300.0" layoutX="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logo%20preto.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="72.0" layoutY="241.0" text="SIGEF">
+                     <font>
+                        <Font name="Tahoma Bold" size="47.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
